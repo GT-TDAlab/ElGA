@@ -129,6 +129,10 @@ Finally, everything can be cleaned up:
 
     $ ./cleanup.sh
 
+To change the settings, e.g., the algorithm being run, use `cmake` from `/scratch/elga/build`:
+
+    $ pushd /scratch/elga/build && cmake -DALG=PR ~/elga && make -j `grep -c ^processor /proc/cpuinfo` && popd
+
 Building ElGA
 -------------
 
